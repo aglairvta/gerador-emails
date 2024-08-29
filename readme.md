@@ -6,19 +6,19 @@ Este script para [zsh](https://is.gd/9tbVJ8) automatiza a criação de e-mails t
 
 ## 🛠️ Funcionalidade
 
-1. **Criação e ativação do ambiente virtual**:
+1. **Criação e ativação do ambiente virtual:**
    
    - Cria e ativa um ambiente virtual Python (`.venv`) para isolar a instalação das dependências.
 
-2. **Instalação do `pymailtm`**:
+2. **Instalação do `pymailtm`:**
    
    - Instala a ferramenta `pymailtm` no ambiente virtual. A ferramenta está disponível em [pymailtm no PyPI](https://pypi.org/project/pymailtm/).
 
-3. **Geração do e-mail temporário**:
+3. **Geração do e-mail temporário:**
    
    - Executa o comando `pymailtm -n` para criar um novo e-mail temporário.
 
-4. **Limpeza automática**:
+4. **Limpeza automática:**
    
    - Remove arquivos temporários e desativa o ambiente virtual após a execução ou em caso de interrupção.
 
@@ -30,13 +30,13 @@ Este script para [zsh](https://is.gd/9tbVJ8) automatiza a criação de e-mails t
 
 ## 🔧 Usando como um executável
 
-1. **Clone o repositório**:
+1. **Clone o repositório:**
 
 ```
 git clone https://github.com/aglairvta/pymailtm-zsh.git
 ```
 
-2. **Torne o script executável**:
+2. **Torne o script executável:**
 
 ```
 sudo chmod +x novoemail.sh
@@ -46,31 +46,31 @@ sudo chmod +x novoemail.sh
 
 Para facilitar a execução do seu script para gerar e-mails temporários, você pode configurá-lo como um alias no `zsh`. Isso permite que você execute o script com um simples comando no terminal, tornando o processo mais ágil e acessível.
 
-1. **Clone o repositório**:
+1. **Clone o repositório:**
 
 ```
 git clone https://github.com/aglairvta/pymailtm-zsh.git
 ```
 
-2. **Torne o script executável**:
+2. **Torne o script executável:**
 
 ```
 sudo chmod +x novoemail.sh
 ```
 
-3. **Adicionar o alias no `.zshrc`**:
+3. **Adicionar o alias no `.zshrc`:**
 
 ```
 nano ~/.zshrc
 ```
 
-4. Adicione a seguinte linha ao final do arquivo para criar um alias. No exemplo abaixo, o alias é chamado de `novoemail`, mas você pode escolher qualquer nome que desejar.
+4. **Adicione a seguinte linha ao final do arquivo para criar um alias. No exemplo abaixo, o alias é chamado de `novoemail`, mas você pode escolher qualquer nome que desejar.**
 
 ```
 alias novoemail='/caminho/para/o/script/temp_email.sh'
 ```
 
-5. **Recarregar o `.zshrc`**:
+5. **Recarregar o `.zshrc`:**
 
 ```
 source ~/.zshrc
@@ -84,7 +84,7 @@ Agora, você pode usar o novo alias `novoemail` para executar o script diretamen
 novoemail
 ```
 
-7. Finalize e descarte o e-mail:
+7. **Finalize e descarte o e-mail:**
 
 ```
 ctrl + c
