@@ -33,7 +33,7 @@ Este script para [zsh](https://is.gd/9tbVJ8) automatiza a criação de e-mails t
 1. **Clone o repositório**:
 
 ```
-git clone https://github.com/aglairvta/gerador-emails.git 
+git clone https://github.com/aglairvta/pymailtm-zsh.git
 ```
 
 2. **Torne o script executável**:
@@ -49,7 +49,7 @@ Para facilitar a execução do seu script para gerar e-mails temporários, você
 1. **Clone o repositório**:
 
 ```
-git clone https://github.com/aglairvta/gerador-emails.git
+git clone https://github.com/aglairvta/pymailtm-zsh.git
 ```
 
 2. **Torne o script executável**:
