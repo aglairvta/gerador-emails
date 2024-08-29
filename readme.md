@@ -24,7 +24,8 @@ Este script para [zsh](https://is.gd/9tbVJ8) automatiza a criação de e-mails t
 
 ## 🧹 Funcionamento da limpeza
 
-- **Durante a execução**: O script executa o comando para gerar o e-mail temporário.
+- **Durante a execução**:
+  - O script executa o comando para gerar o e-mail temporário.
 - **Após a execução**:
   - **Limpeza**: A função `clean_up` é chamada automaticamente para remover arquivos temporários no diretório `/tmp` e desativar o ambiente virtual.
 
@@ -67,7 +68,7 @@ nano ~/.zshrc
 4. **Adicione a seguinte linha ao final do arquivo para criar um alias. No exemplo abaixo, o alias é chamado de `novoemail`, mas você pode escolher qualquer nome que desejar.**
 
 ```
-alias novoemail='/caminho/para/o/script/temp_email.sh'
+alias novoemail='/caminho/para/o/script/novoemail.sh'
 ```
 
 5. **Recarregar o `.zshrc`:**
