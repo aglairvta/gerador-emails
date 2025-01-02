@@ -1,35 +1,34 @@
-## Gere e-mails temporários através de um alias com pymailtm e zsh
+### Script para gerar e-mails temporários com `pymailtm`
 
-## 🕶 Visão geral
-
-Este script para [zsh](https://is.gd/9tbVJ8) automatiza a criação de e-mails temporários utilizando a ferramenta [pymailtm](https://is.gd/TFc6fU). Ele também inclui uma funcionalidade de limpeza que remove arquivos temporários e o ambiente virtual após a execução, garantindo que seu sistema permaneça limpo e mensagens recebidas sejam deletadas ao finalizar o script.
-
-## 🛠️ Funcionalidade
-
-1. **Criação e ativação do ambiente virtual:**
+> Este script, projetado para uso no [zsh](https://is.gd/9tbVJ8), facilita a criação de e-mails temporários utilizando a ferramenta [pymailtm](https://is.gd/TFc6fU). Ele inclui funcionalidades para limpeza automática, garantindo que arquivos temporários e o ambiente virtual sejam removidos ao final da execução ou em caso de interrupção.
+---
+### Funcionalidade
    
-   - Cria e ativa um ambiente virtual Python (`.venv`) para isolar a instalação das dependências.
+- Cria e ativa um ambiente virtual Python (`.venv`) para isolar a instalação das dependências.
 
-2. **Instalação do `pymailtm`:**
+- Instala a ferramenta `pymailtm` no ambiente virtual. A ferramenta está disponível em [pymailtm no PyPI](https://pypi.org/project/pymailtm/).
+
+- Executa o comando `pymailtm -n` para criar um novo e-mail temporário.
    
-   - Instala a ferramenta `pymailtm` no ambiente virtual. A ferramenta está disponível em [pymailtm no PyPI](https://pypi.org/project/pymailtm/).
+- Remove arquivos temporários e desativa o ambiente virtual após a execução ou em caso de interrupção.
+---
+### Usando como executável
 
-3. **Geração do e-mail temporário:**
-   
-   - Executa o comando `pymailtm -n` para criar um novo e-mail temporário.
+1. **Clone o repositório:**
 
-4. **Limpeza automática:**
-   
-   - Remove arquivos temporários e desativa o ambiente virtual após a execução ou em caso de interrupção.
+```
+git clone https://github.com/aglairvta/pymailtm-zsh.git
+```
 
-## 🧹 Funcionamento da limpeza
+2. **Torne o script executável:**
 
-- **Durante a execução**:
-  - O script executa o comando para gerar o e-mail temporário.
-- **Após a execução**:
-  - **Limpeza**: A função `clean_up` é chamada automaticamente para remover arquivos temporários no diretório `/tmp` e desativar o ambiente virtual.
+```
+sudo chmod +x novoemail.sh
+```
+---
+### Usando como aliás no zsh
 
-## 🔧 Usando como um executável
+> Para facilitar o uso, você pode configurar um alias no zsh, permitindo executar o script com um comando simples.
 
 1. **Clone o repositório:**
 
@@ -43,23 +42,7 @@ git clone https://github.com/aglairvta/pymailtm-zsh.git
 sudo chmod +x novoemail.sh
 ```
 
-## 🧩 Usando como aliás através do zsh
-
-Para facilitar a execução do seu script para gerar e-mails temporários, você pode configurá-lo como um alias no `zsh`. Isso permite que você execute o script com um simples comando no terminal, tornando o processo mais ágil e acessível.
-
-1. **Clone o repositório:**
-
-```
-git clone https://github.com/aglairvta/pymailtm-zsh.git
-```
-
-2. **Torne o script executável:**
-
-```
-sudo chmod +x novoemail.sh
-```
-
-3. **Adicionar o alias no `.zshrc`:**
+3. **Adicione o alias no `.zshrc`:**
 
 ```
 nano ~/.zshrc
@@ -71,13 +54,13 @@ nano ~/.zshrc
 alias novoemail='/caminho/para/o/script/novoemail.sh'
 ```
 
-5. **Recarregar o `.zshrc`:**
+5. **Recarregue o `.zshrc`:**
 
 ```
 source ~/.zshrc
 ```
 
-6. **Executar o alias**:
+6. **Execute o alias**:
 
 Agora, você pode usar o novo alias `novoemail` para executar o script diretamente no terminal. Basta digitar o comando:
 
@@ -90,7 +73,7 @@ novoemail
 ```
 ctrl + c
 ```
-
+---
 **Exemplo de saída:**
 
 ![e-mail gerado através da aliás e pymailtm](ex.png)
