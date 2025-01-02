@@ -1,12 +1,12 @@
 ### Script para gerar e-mails temporários com `pymailtm`
 
-> Este script, projetado para uso no [zsh](https://is.gd/9tbVJ8), facilita a criação de e-mails temporários utilizando a ferramenta [pymailtm](https://is.gd/TFc6fU). Ele inclui funcionalidades para limpeza automática, garantindo que arquivos temporários e o ambiente virtual sejam removidos ao final da execução ou em caso de interrupção.
+> Este script, projetado para uso no [zsh](https://is.gd/9tbVJ8), facilita a criação de e-mails temporários utilizando a ferramenta [pymailtm](https://is.gd/usiUGW). Ele inclui funcionalidades para limpeza automática, garantindo que arquivos temporários e o ambiente virtual sejam removidos ao final da execução ou em caso de interrupção.
 ---
 ### Funcionalidade
    
 - Cria e ativa um ambiente virtual Python (`.venv`) para isolar a instalação das dependências.
 
-- Instala a ferramenta `pymailtm` no ambiente virtual. A ferramenta está disponível em [pymailtm no PyPI](https://pypi.org/project/pymailtm/).
+- Instala a ferramenta `pymailtm` no ambiente virtual. A ferramenta está disponível em [pymailtm](https://is.gd/usiUGW).
 
 - Executa o comando `pymailtm -n` para criar um novo e-mail temporário.
    
@@ -74,16 +74,12 @@ novoemail
 ctrl + c
 ```
 ---
-**Exemplo de saída:**
+### Exemplo de saída:
 
 ![e-mail gerado através da aliás e pymailtm](ex.png)
+---
+### Créditos
 
-## ⭐ Créditos
+- [pymailtm](https://is.gd/usiUGW)
 
-- [mailtm - repositório](https://is.gd/TFc6fU)
-
-- [mailtm - documentação](https://is.gd/GOym9G)
-
-- [mailtm - aplicação online](https://is.gd/HOG3SF)
-
-- [zsh - repositório](https://is.gd/9tbVJ8)
+- [zsh](https://is.gd/9tbVJ8)
